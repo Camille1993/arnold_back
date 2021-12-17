@@ -8,6 +8,7 @@ const hashingOptions = {
   timeCost: 5,
   parallelism: 1
 };
+
 const hashPassword = (plainPassword) => {
   return argon2.hash(plainPassword, hashingOptions);
 };
